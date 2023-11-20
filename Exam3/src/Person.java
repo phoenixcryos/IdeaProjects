@@ -1,11 +1,9 @@
 public class Person {
-    // fields
-    String name;
-    String address;
-    String phoneNumber;
-    String emailAddress;
+    private final String name;
+    private final String address;
+    private final String phoneNumber;
+    private final String emailAddress;
 
-    // constructor
     public Person(String name, String address, String phoneNumber, String emailAddress) {
         this.name = name;
         this.address = address;
@@ -13,17 +11,12 @@ public class Person {
         this.emailAddress = emailAddress;
     }
 
-    // getters and setters
+    // Getters and setters
     // ...
 
-    // toString method
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", emailAddress='" + emailAddress + '\'' +
-                '}';
+        return "Person{name='" + name + "', address='" + address +
+                "', phoneNumber='" + phoneNumber + "', emailAddress='" + emailAddress + "'}";
     }
 }
