@@ -1,16 +1,16 @@
 public class Student extends Person {
-    // additional field
-    String status;
+    private final String status;
 
-    // constructor
     public Student(String name, String address, String phoneNumber, String emailAddress, String status) {
         super(name, address, phoneNumber, emailAddress);
         this.status = status;
     }
 
-    // getters and setters
+    // Getters and setters
     // ...
 
-    // toString method
-    // ...
+    @Override
+    public String toString() {
+        return "Student{" + super.toString() + ", status='" + status + "'}";
+    }
 }

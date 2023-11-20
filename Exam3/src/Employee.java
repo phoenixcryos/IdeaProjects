@@ -1,10 +1,8 @@
 public abstract class Employee extends Person {
-    // fields
-    String department;
-    double monthlySalary;
-    String dateHired;
+    private final String department;
+    private final double monthlySalary;
+    private final String dateHired;
 
-    // constructor
     public Employee(String name, String address, String phoneNumber, String emailAddress,
                     String department, double monthlySalary, String dateHired) {
         super(name, address, phoneNumber, emailAddress);
@@ -13,9 +11,12 @@ public abstract class Employee extends Person {
         this.dateHired = dateHired;
     }
 
-    // getters and setters
+    // Getters and setters
     // ...
 
-    // toString method
-    // ...
+    @Override
+    public String toString() {
+        return "Employee{" + super.toString() + ", department='" + department +
+                "', monthlySalary=" + monthlySalary + ", dateHired='" + dateHired + "'}";
+    }
 }

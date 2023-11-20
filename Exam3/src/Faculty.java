@@ -1,9 +1,7 @@
 public class Faculty extends Employee {
-    // additional fields
-    String officeHours;
-    String rank; // junior or senior
+    private final String officeHours;
+    private final String rank; // junior or senior
 
-    // constructor
     public Faculty(String name, String address, String phoneNumber, String emailAddress,
                    String department, double monthlySalary, String dateHired,
                    String officeHours, String rank) {
@@ -12,9 +10,12 @@ public class Faculty extends Employee {
         this.rank = rank;
     }
 
-    // getters and setters
+    // Getters and setters
     // ...
 
-    // toString method
-    // ...
+    @Override
+    public String toString() {
+        return "Faculty{" + super.toString() + ", officeHours='" + officeHours +
+                "', rank='" + rank + "'}";
+    }
 }
