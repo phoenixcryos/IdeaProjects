@@ -1,0 +1,3 @@
+Subtotal: $72.04
+Tax: $3.82
+Final Total: $75.86
